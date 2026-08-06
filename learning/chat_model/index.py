@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-
 NVIDIA_API_KEY = os.getenv("NVIDIA_API_KEY")
 client = ChatNVIDIA(
     #   model="z-ai/glm-5.2",
