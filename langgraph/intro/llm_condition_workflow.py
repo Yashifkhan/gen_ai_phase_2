@@ -20,6 +20,7 @@ model = ChatNVIDIA(
 )
 
 class SentimentSchema(BaseModel):
+    
     sentiment:Literal['positive','negative'] =Field(description="sentiment of the review")
 
 class DiagnosisSchema(BaseModel):
