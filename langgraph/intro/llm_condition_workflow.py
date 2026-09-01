@@ -28,6 +28,7 @@ class DiagnosisSchema(BaseModel):
         description="The category of the issue"
     )
     tone: Literal["angry", "frustrated", "disappointed", "calm"] = Field(
+        
         description="The emotional tone of the user"
     )
     urgency: Literal["low", "medium", "high"] = Field(
